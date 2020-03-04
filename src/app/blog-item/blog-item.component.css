@@ -1,0 +1,76 @@
+.blog-item-container {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.blog-item-container::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+.blog-item-container .blog-item-media {
+    padding: 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto -1px;
+    border-radius: 2px 2px 0 0;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.blog-item-container .blog-item-media a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.blog-item-container .blog-item-media img {
+    width: 100%;
+    display: inline-block;
+}
+.blog-item-container .blog-item-body {
+    z-index: 9;
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 2px;
+    padding: 0 25px 25px;
+    border: 1px solid #efefef;
+}
+.blog-item-container .blog-item-footer {
+    width: 100%;
+    z-index: 10;
+    display: none;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 32px;
+    padding: 15px 25px;
+    position: relative;
+    border: 1px solid #efefef;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+}
+.blog-item-body .blog-item-description {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    margin: 12px auto 0;
+}
+.blog-single-item .blog-item .blog-item-description { margin-top: 20px; }
+.blog-single-item .blog-item .blog-item-description p { margin: 0 0 25px 0; }
+.blog-single-item .blog-item .blog-item-description p:last-child { margin-bottom: 0; }
+.blog-minimal .blog-item .blog-item-read-btn,
+.blog-minimal .blog-item .blog-item-description {
+    display: none;
+}
+.blog-single-item .blog-item .blog-item-description { margin-top: 20px; }
+.blog-single-item .blog-item .blog-item-description p { margin: 0 0 25px 0; }
+.blog-single-item .blog-item .blog-item-description p:last-child { margin-bottom: 0; }
